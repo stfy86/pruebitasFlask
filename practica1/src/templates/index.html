@@ -1,0 +1,17 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+   {% if title %}
+    <title>{{title}} - microblog</title>
+    {% else %}
+    <title>Welcome to microblog</title>
+    {% endif %}
+  </head>
+  <body>
+      <h1>Hello, {{user.nickname}}!</h1>
+  </body>
+</html>
