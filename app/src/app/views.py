@@ -2,10 +2,9 @@
 # and open the template in the editor.
 
 from app import app
-from flask import render_template 
 
 @app.route('/')
-@app.route('/index')
+@app.route('/practica1')
 def index1():
     return "Hello, World!"
 
@@ -25,11 +24,3 @@ def index2():
 </html>
 '''
 
-#practica 3
-@app.route('/')
-@app.route('/practica3')
-def index3():
-    user = { 'nickname': 'Miguel' } # fake user
-    return render_template("index2.html",
-        title = 'Home',
-        user = user)
